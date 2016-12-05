@@ -384,6 +384,9 @@ var is_ok = true;
 return is_ok;
 }
 
+function reload_Soft_Center(){
+location.href = "/Main_Soft_center.asp";
+}
 </script>
 </head>
 <body onkeydown="key_event(event);" onclick="if(isMenuopen){hideClients_Block(event)}" onload="init();">
@@ -419,6 +422,7 @@ return is_ok;
 <td bgcolor="#4D595D" colspan="3" valign="top">
 <div>&nbsp;</div>
 <div class="formfonttitle">WebShell</div>
+<div style="float:right; width:15px; height:25px;margin-top:-22px"><img id="return_btn" onclick="reload_Soft_Center();" align="right" style="cursor:pointer;position:absolute;margin-left:-30px;margin-top:-25px;" title="返回软件中心" src="/images/backprev.png" onMouseOver="this.src='/images/backprevclick.png'" onMouseOut="this.src='/images/backprev.png'"></img></div>
 <div style="margin-left:5px;margin-top:10px;margin-bottom:10px"><img src="/images/New_ui/export/line_export.png"/></div>
 <div class="formfontdesc" id="cmdDesc">Shell by <a href="http://www.mjy211.com" target="_blank">@saodneli</a>, web by @Xiaobao</div>
 <div style="margin-top:8px">

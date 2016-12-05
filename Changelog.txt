@@ -1,4 +1,7 @@
 Koolshare Asuswrt-Merlin adm Changelog
 ===========================================
+1.1
+   - add	add return to softerware center button.
+
 1.0
    - add	add webshell module for merlin xiaobao firmware.
