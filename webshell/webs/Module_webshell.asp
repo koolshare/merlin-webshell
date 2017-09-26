@@ -341,16 +341,9 @@ function tryrun() {
     });
 }
 
-var enable_ss = "<% nvram_get("enable_ss"); %>";
-var enable_soft = "<% nvram_get("enable_soft"); %>";
 function menu_hook(title, tab) {
-	if(enable_ss == "1" && enable_soft == "1"){
-		tabtitle[17] = new Array("", "webshell");
-		tablink[17] = new Array("", "Module_webshell.asp");
-	}else{
-		tabtitle[16] = new Array("", "webshell");
-		tablink[16] = new Array("", "Module_webshell.asp");
-	}
+	tabtitle[tabtitle.length -1] = new Array("", "webshell");
+	tablink[tablink.length -1] = new Array("", "Module_webshell.asp");
 }
 
 var $j = jQuery.noConflict();
